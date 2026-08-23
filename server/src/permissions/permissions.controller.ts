@@ -14,11 +14,11 @@ import { CreatePermissionDto } from './dto/create-permission.dto';
 import { UpdatePermissionDto } from './dto/update-permission.dto';
 import { GrantModulePermissionDto } from './dto/grant-module-permission.dto';
 import { CheckPermissionDto } from './dto/check-permission.dto';
-import { AuthGuard } from 'src/auth/auth.guard';
-import { RolesGuard } from 'src/auth/roles.guard';
-import { Roles } from 'src/auth/roles.decorator';
+import { AuthGuard } from '../auth/auth.guard';
+import { RolesGuard } from '../auth/roles.guard';
+import { Roles } from '../auth/roles.decorator';
 import type { Request } from 'express';
-import { Role } from 'src/auth/user.type';
+import { Role } from '../auth/user.type';
 
 interface AuthRequest extends Request {
   user: {

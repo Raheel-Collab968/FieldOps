@@ -13,12 +13,12 @@ import {
 import { JobsService } from './jobs.service';
 import { CreateJobDto } from './dto/create-job.dto';
 import { UpdateJobDto } from './dto/update-job.dto';
-import { AuthGuard } from 'src/auth/auth.guard';
-import { Roles } from 'src/auth/roles.decorator';
-import { RolesGuard } from 'src/auth/roles.guard';
+import { AuthGuard } from '../auth/auth.guard';
+import { Roles } from '../auth/roles.decorator';
+import { RolesGuard } from '../auth/roles.guard';
 import type { Request } from 'express';
-import { PaginationDto } from 'src/admin/dto/pagination.dto';
-import { Role } from 'src/auth/user.type';
+import { PaginationDto } from '../admin/dto/pagination.dto';
+import { Role } from '../auth/user.type';
 
 interface AuthRequest extends Request {
   user: {

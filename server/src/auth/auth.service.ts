@@ -1,11 +1,11 @@
 import { Injectable, UnauthorizedException } from '@nestjs/common';
 import { RegisterAuthDto } from './dto/create-auth.dto';
 // import { UpdateAuthDto } from './dto/update-auth.dto';
-import { UserService } from 'src/user/user.service';
+import { UserService } from '../user/user.service';
 import bcrypt from 'bcrypt';
 import { JwtService } from '@nestjs/jwt';
 import { LoginAuthDto } from './dto/login-auth.dto';
-import { PaginationDto } from 'src/admin/dto/pagination.dto';
+import { PaginationDto } from '../admin/dto/pagination.dto';
 // import { UpdateAuthDto } from './dto/update-auth.dto';
 
 @Injectable()

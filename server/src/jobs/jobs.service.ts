@@ -10,12 +10,12 @@ import { UpdateJobDto } from './dto/update-job.dto';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { Job, JobStatus } from './schema/job.schema';
-import { AuthGuard } from 'src/auth/auth.guard';
-import { Roles } from 'src/auth/roles.decorator';
-import { Role } from 'src/auth/user.type';
-import { RolesGuard } from 'src/auth/roles.guard';
-import { PaginationDto } from 'src/admin/dto/pagination.dto';
-import { paginate } from 'src/admin/pagination-helper';
+import { AuthGuard } from '../auth/auth.guard';
+import { Roles } from '../auth/roles.decorator';
+import { Role } from '../auth/user.type';
+import { RolesGuard } from '../auth/roles.guard';
+import { PaginationDto } from '../admin/dto/pagination.dto';
+import { paginate } from '../admin/pagination-helper';
 
 @Injectable()
 export class JobsService {

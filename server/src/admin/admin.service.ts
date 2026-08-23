@@ -1,13 +1,13 @@
 import { Injectable, InternalServerErrorException, NotFoundException, BadRequestException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
-import { Job, JobStatus } from 'src/jobs/schema/job.schema';
+import { Job, JobStatus } from '../jobs/schema/job.schema';
 import { Model, Types } from 'mongoose';
 
-import { Roles } from 'src/auth/roles.decorator';
-import { Auth } from 'src/auth/schema/auth.schema';
+import { Roles } from '../auth/roles.decorator';
+import { Auth } from '../auth/schema/auth.schema';
 import { PaginationDto } from './dto/pagination.dto';
 import { paginate } from './pagination-helper';
-import { Role } from 'src/auth/user.type';
+import { Role } from '../auth/user.type';
 
 @Injectable()
 export class AdminService {

@@ -9,10 +9,10 @@ import {
   UpdateJobStatusDto,
 } from './dto/create-technician.dto';
 import { InjectModel } from '@nestjs/mongoose';
-import { Job, JobStatus } from 'src/jobs/schema/job.schema';
+import { Job, JobStatus } from '../jobs/schema/job.schema';
 import { Model, Types } from 'mongoose';
-import { PaginationDto } from 'src/admin/dto/pagination.dto';
-import { paginate } from 'src/admin/pagination-helper';
+import { PaginationDto } from '../admin/dto/pagination.dto';
+import { paginate } from '../admin/pagination-helper';
 
 @Injectable()
 export class TechnicianService {

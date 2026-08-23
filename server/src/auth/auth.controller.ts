@@ -17,7 +17,7 @@ import { AuthGuard } from './auth.guard';
 import { LoginAuthDto } from './dto/login-auth.dto';
 import { RolesGuard } from './roles.guard';
 import { Roles } from './roles.decorator';
-import { PaginationDto } from 'src/admin/dto/pagination.dto';
+import { PaginationDto } from '../admin/dto/pagination.dto';
 import { Role } from './user.type';
 // import { UpdateAuthDto } from './dto/update-auth.dto';
 

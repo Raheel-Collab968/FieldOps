@@ -1,9 +1,9 @@
 import { BadRequestException, ConflictException, Injectable, NotFoundException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { Auth } from 'src/auth/schema/auth.schema';
-import { PaginationDto } from 'src/admin/dto/pagination.dto';
-import { paginate } from 'src/admin/pagination-helper';
+import { Auth } from '../auth/schema/auth.schema';
+import { PaginationDto } from '../admin/dto/pagination.dto';
+import { paginate } from '../admin/pagination-helper';
 import { Role } from '../auth/user.type';
 
 @Injectable()

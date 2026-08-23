@@ -15,11 +15,11 @@ import {
   CreateTechnicianDto,
   UpdateJobStatusDto,
 } from './dto/create-technician.dto';
-import { AuthGuard } from 'src/auth/auth.guard';
-import { RolesGuard } from 'src/auth/roles.guard';
-import { Role } from 'src/auth/user.type';
-import { Roles } from 'src/auth/roles.decorator';
-import { PaginationDto } from 'src/admin/dto/pagination.dto';
+import { AuthGuard } from '../auth/auth.guard';
+import { RolesGuard } from '../auth/roles.guard';
+import { Role } from '../auth/user.type';
+import { Roles } from '../auth/roles.decorator';
+import { PaginationDto } from '../admin/dto/pagination.dto';
 
 @Controller('technician')
 export class TechnicianController {

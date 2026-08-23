@@ -11,9 +11,9 @@ import {
   Query,
 } from '@nestjs/common';
 import { AdminService } from './admin.service';
-import { AuthGuard } from 'src/auth/auth.guard';
-import { RolesGuard } from 'src/auth/roles.guard';
-import { Roles } from 'src/auth/roles.decorator';
+import { AuthGuard } from '../auth/auth.guard';
+import { RolesGuard } from '../auth/roles.guard';
+import { Roles } from '../auth/roles.decorator';
 import { PaginationDto } from './dto/pagination.dto';
 import { Role } from '../auth/user.type';
 
