@@ -118,7 +118,7 @@ const sidebar: React.FC<SidebarProps> = ({ content }) => {
 
     isClient ? getItem('Jobs', 'sub2', <FileSearchOutlined />, [
       getItem(<Link href="/client/jobs/create">Create Job</Link>, '5', <PlusCircleOutlined />),
-      getItem(<Link href="/client/jobs">My Jobs</Link>,          '13', <UnorderedListOutlined />),
+      // getItem(<Link href="/client/jobs">My Jobs</Link>,          '13', <UnorderedListOutlined />),
     ]) : null,
 
     // TECHNICIAN
