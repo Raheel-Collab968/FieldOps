@@ -1,0 +1,23 @@
+# dependencies
+node_modules
+
+# next.js
+.next
+out
+.vercel
+
+# env & secrets
+.env
+.env.*
+!.env.example
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# build cache / misc
+*.tsbuildinfo
+coverage
+.DS_Store
+Thumbs.db
